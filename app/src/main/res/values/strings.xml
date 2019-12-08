@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Switch App</string>
+
+
+    <string-array name="gavor_array">
+        <item>السبت</item>
+        <item>الاحد</item>
+        <item>الاثنين</item>
+        <item>الثلاثاء</item>
+        <item>الاربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+    </string-array>
+
+
+    <string-array name="time_array">
+        <item>9:00 صباحا</item>
+        <item>10:00 صباحا</item>
+        <item>11:00 صباحا</item>
+        <item>12:00 مساء</item>
+        <item>1:00 مساء</item>
+        <item>2:00 مساء</item>
+        <item>3:00 مساء</item>
+        <item>4:00 مساء</item>
+        <item>5:00 مساء</item>
+        <item>6:00 مساء</item>
+        <item>7:00 مساء</item>
+        <item>8:00 مساء</item>
+        <item>9:00 مساء</item>
+    </string-array>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+</resources>

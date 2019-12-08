@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/piecesParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/back_corner4"
+    android:layout_height="wrap_content">
+
+
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_pieces"/>
+
+        <ImageView
+            android:id="@+id/pieceIV"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_pieces"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="اسم القطعة"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/selectedTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="false"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/minceIV"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/minus_circle"
+
+            />
+        <TextView
+            android:id="@+id/quantityTV"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:id="@+id/plusIV"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/plus_circle"
+            />
+    </LinearLayout>
+
+</LinearLayout>

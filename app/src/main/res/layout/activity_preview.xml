@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <!--<view-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#40000000"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_blue" />
+        </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray3"
+            android:fillViewport="true"
+            android:layoutDirection="rtl"
+            tools:context=".activities.RegisterActivity">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/back_corner1">
+
+                    <TextView
+                        android:id="@+id/loginTextTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="طلب معاينة"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back_corner2"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="الاسم الثلاثي"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/nameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:hint="اكتب اسمك الثلاثي هنا"
+                            android:padding="8dp"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رقم التليفون"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/phoneET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:hint="اكتب رقم التليفون هنا"
+                            android:padding="8dp"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رقم التليفون بديل"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/phone2ET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:hint="اكتب رقم التليفون بديل هنا"
+                            android:padding="8dp"
+                            android:textSize="11sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="اختر المحافظة"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/goverSP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="right"
+                                android:paddingRight="20dp"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/menu_down" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="العنوان"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/addressET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:hint="اكتب العنوان بالتفصيل هنا"
+                            android:padding="8dp"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="رقم العمارة"
+                                    android:textColor="@color/gray7"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/buldingET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/edit_text_back1"
+                                    android:hint="اكتب رقم العمارة"
+                                    android:inputType="number"
+                                    android:padding="8dp"
+                                    android:textSize="11sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="رقم الشقة"
+                                    android:textColor="@color/gray7"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/appartementET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/edit_text_back1"
+                                    android:hint="اكتب رقم الشقة"
+                                    android:inputType="number"
+                                    android:padding="8dp"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="علامة مميزة قريبة من البيت"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/nearET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:hint="اكتب علامة مميزة قريبة من البيت "
+                            android:padding="8dp"
+                            android:textSize="11sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="اختر نوع الجهاز"
+                            android:textColor="@color/gray7"
+                            android:textSize="15sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edit_text_back1"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/equimentSP"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="right"
+                                android:paddingRight="20dp"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/menu_down" />
+
+                        </RelativeLayout>
+
+
+                        <Button
+                            android:id="@+id/previewBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button_back1"
+                            android:text="طلب معاينة"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/contactusBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/back_corner3"
+                            android:text="راسلنا"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="?android:colorAccent"
+        android:indeterminateTintMode="src_in"
+        android:visibility="gone" />
+
+
+</FrameLayout>
